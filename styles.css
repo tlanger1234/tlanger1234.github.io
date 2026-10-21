@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "Roboto Condensed";
+    src: url(./font/roboto-condensed-regular.woff2) format("woff2");
+}
+
+html {
+    font-family: "Roboto Condensed";
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+    --fore: hsl(253, 74%, 85%);
+    --back: hsl(253, 74%, 7%);
+}
+
+body {
+    min-height: 1080px;
+    color: white;
+    background: 
+    radial-gradient(
+        67% 650% at center,
+        indigo 0,
+        var(--back) 50%);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+main {
+    font-size: 19px;
+    margin-top: 50px;
+    width: 1340px;
+    height: 850px;
+    background-color: var(--fore);
+    border: 5px;
+    border-radius: 10px;
+    box-shadow:
+     15px 15px 10px 5px black,
+    -15px 15px 10px 5px black,
+    15px -15px 10px 5px black,
+    -15px -15px 10px 5px black;
+}
+
+main div, nav {
+    margin: 0 150px;
+    background-color: var(--fore);
+    color: black;
+
+}
+
+
+main nav {
+    text-align: left;
+}
+
+.contact {
+    padding-top: 0;
+} 
+
+.rainbow-text {
+ background-clip: text;
+ animation: rainbow 4s infinite;
+}
+
+@keyframes rainbow {
+    0% {color: red;}
+    20% {color: orange;}
+    40% {color: yellow;}
+    60% {color: green;}
+    80% {color: pink;}
+    100% {color: red}
+}
+

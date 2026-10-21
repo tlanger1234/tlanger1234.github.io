@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "Roboto Condensed";
+    src: url(../../font/roboto-condensed-regular.woff2) format("woff2");
+}
+
+html {
+    font-family: "Roboto Condensed";
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+    --fore: hsl(253, 74%, 85%);
+    --back: hsl(253, 74%, 7%);
+}
+
+body {
+    
+    color: white;
+    background-color: var(--back);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+
+}
+
+a:link {
+    color: cyan;
+}
+
+a:visited {
+    color: darkcyan;
+}
+
+main {
+    font-size: 19px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 50px;
+    /* width: 1340px;
+    height: 850px; */
+    background-color: var(--back);
+    color: white;
+}
+
+main div{
+    margin: 0 20px;
+    flex-grow: 1;
+}
+
+div.row {
+    margin: 50px 0;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+div.row div {
+    flex-grow: 1;
+    flex-basis: 750px;
+}
+
+nav {
+    margin-left: 150px;
+    text-align: left;
+}
+
+
